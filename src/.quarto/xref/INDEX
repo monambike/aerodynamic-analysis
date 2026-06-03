@@ -4,5 +4,8 @@
   },
   "slideshow/slide-presentation.qmd": {
     "slide-presentation.html": "2579b8da"
+  },
+  "dashboard/dashboard.qmd": {
+    "dashboard.html": "7e6256cf"
   }
 }
