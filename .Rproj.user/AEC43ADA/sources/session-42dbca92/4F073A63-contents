@@ -1,0 +1,85 @@
+---
+title: "Análise de Aerodinâmica"
+format:
+  dashboard:
+    theme:
+      light: 
+        pulse
+        - scss/main.scss
+        - scss/layout/_dashboard.scss
+      dark:
+        darkly
+        - scss/main.scss
+        - scss/layout/_dashboard.scss
+editor_options:
+  chunk_output_type: console
+server: shiny
+---
+
+```{r}
+#| context: setup
+#| include: false
+library(shiny)
+library(bslib)
+```
+
+# Perfis
+
+## Column {.tabset}
+
+```{r}
+#| title: Perfil 1
+
+actionButton(
+  "id",
+  "Texto"
+)
+```
+
+```{r}
+#| title: Perfil 2
+
+actionButton(
+  "id",
+  "Texto"
+)
+```
+
+```{r}
+#| title: Perfil 3
+
+actionButton(
+  "id",
+  "Texto"
+)
+```
+
+## Row
+
+## Column
+
+# Comparar Perfis
+
+```{r}
+#| content: toolbar
+#| title: Configurações
+
+selectInput( 
+  "cmbSection", 
+  "Selecione a seção do avião:", 
+  list(
+    "Asa" = "wing",
+    "Horizontal" = "backHorizontal",
+    "Vertical" = "backVertical") 
+)
+
+checkboxGroupInput( 
+  "chkgrpProfiles", 
+  "Visualizar Perfis:", 
+  c( 
+    "Perfil 1" = "profile1", 
+    "Perfil 2" = "profile2", 
+    "Perfil 3" = "profile3" 
+  ) 
+)
+```

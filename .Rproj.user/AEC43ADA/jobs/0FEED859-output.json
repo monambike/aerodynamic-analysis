@@ -1,0 +1,2 @@
+[1,"==> quarto serve dashboard.qmd\n\n"]
+[1,"ERROR: dashboard.qmd is a knitr engine document that uses server: shiny so cannot be included in a project with an output-dir (shiny document output must be rendered alongside its source document).\n"]
