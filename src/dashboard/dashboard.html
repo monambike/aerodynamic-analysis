@@ -36,9 +36,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="dashboard_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="dashboard_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="dashboard_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="dashboard_files/libs/bootstrap/bootstrap-890b18279d630a8af0357820e6fbb7bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="dashboard_files/libs/bootstrap/bootstrap-dark-027515e52600a68fc2db94212f2f18c9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="dashboard_files/libs/bootstrap/bootstrap-890b18279d630a8af0357820e6fbb7bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="dashboard_files/libs/bootstrap/bootstrap-5ed6809d05ebe9ee4244aad4d6ba8d0c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="dashboard_files/libs/bootstrap/bootstrap-dark-81e112ba198d9eb99592935e3b91adae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="dashboard_files/libs/bootstrap/bootstrap-5ed6809d05ebe9ee4244aad4d6ba8d0c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="dashboard_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="dashboard_files/libs/quarto-dashboard/stickythead.js"></script>
 
@@ -52,6 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="dashboard_files/libs/selectize-0.15.2/js/selectize.min.js"></script>
 
 <script src="dashboard_files/libs/selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js"></script>
+
+<link href="dashboard_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 
 
 
@@ -276,14 +278,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div id="comparar-perfis" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-comparar-perfis">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-title="Configurações" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header"><div class="card-title"><span style="display: inline">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-toolbar html-fill-item html-fill-container" title="Configurações" data-target-position="header" data-target-element="next"><div class="card-title"><span style="display: inline">
 Configurações
-</span></div></div>
-<div class="card-body html-fill-item html-fill-container">
+</span></div>
 <div class="cell-output-display html-fill-item html-fill-container no-overflow-x">
 <div class="form-group shiny-input-container html-fill-item html-fill-container">
-<label class="control-label" id="cmbSection-label" for="cmbSection">Selecione a seção do avião:</label>
+<label class="control-label" id="cmbSection-label" for="cmbSection">Seção do Avião:</label>
 <div class="html-fill-item html-fill-container">
 <select id="cmbSection" class="shiny-input-select"><option value="wing" selected="">Asa</option>
 <option value="backHorizontal">Horizontal</option>
@@ -316,6 +317,12 @@ Configurações
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="shiny-plot-output html-fill-item html-fill-container" id="outb292d22298cbad67" style="width:100%;height:400px;"></div>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">

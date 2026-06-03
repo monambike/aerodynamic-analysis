@@ -1,26 +1,24 @@
 {
-    "id": "DE168AE8",
-    "path": "G:/aerodynamic-analysis/src/scss/layout/_slideshow.scss",
-    "project_path": "scss/layout/_slideshow.scss",
+    "id": "BE2F0A76",
+    "path": "G:/aerodynamic-analysis/src/scss/modules/slideshow.scss",
+    "project_path": "scss/modules/slideshow.scss",
     "type": "scss",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1780518385602.0,
+    "created": 1780526551266.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 3,
     "properties": {
         "source_window_id": "",
-        "Source": "Source",
-        "cursorPosition": "109,3",
-        "scrollLine": "99"
+        "Source": "Source"
     },
     "folds": "",
     "lastKnownWriteTime": 1780520771,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1780520771141,
+    "last_content_update": 1780520771,
     "read_only": false,
     "read_only_alternatives": []
 }

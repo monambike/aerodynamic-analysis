@@ -4,11 +4,11 @@ format:
   dashboard:
     theme:
       light: 
-        pulse
+        - pulse
         - ../scss/main.scss
         - ../scss/modules/dashboard.scss
       dark:
-        darkly
+        - darkly
         - ../scss/main.scss
         - ../scss/modules/dashboard.scss
 editor_options:
@@ -60,16 +60,16 @@ actionButton(
 # Comparar Perfis
 
 ```{r}
-#| content: toolbar
+#| content: card-toolbar
 #| title: Configurações
 
 selectInput( 
   "cmbSection", 
-  "Selecione a seção do avião:", 
+  "Seção do Avião:", 
   list(
     "Asa" = "wing",
     "Horizontal" = "backHorizontal",
-    "Vertical" = "backVertical") 
+    "Vertical" = "backVertical")
 )
 
 checkboxGroupInput( 
@@ -82,3 +82,20 @@ checkboxGroupInput(
   ) 
 )
 ```
+
+```{r}
+renderPlot({
+  if (input$cmbSection == "wing") {
+    plot(dados_asa$x, dados_asa$y)
+  }
+
+  if (input$cmbSection == "backHorizontal") {
+    plot(dados_horizontal$x, dados_horizontal$y)
+  }
+
+  if (input$cmbSection == "backVertical") {
+    plot(dados_vertical$x, dados_vertical$y)
+  }
+})
+```
+
