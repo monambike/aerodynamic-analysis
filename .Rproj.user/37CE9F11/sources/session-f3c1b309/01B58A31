@@ -1,0 +1,27 @@
+{
+    "id": "01B58A31",
+    "path": "/cloud/project/dashboard.qmd",
+    "project_path": "dashboard.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1780247518733.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "10,14",
+        "scrollLine": "0",
+        "chunk_output_type": "console"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1780495620,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1780495620068,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,93 @@
+---
+title: "Análise de Aerodinâmica"
+subtitle: "Entendendo o mundo da <em>aerodinâmica</em> com a <br> <b>visualização de dados</b>"
+format:
+  revealjs:
+    transition: slide
+    title-slide-attributes:
+      data-background-video: resources/videos/background-sky.mp4
+      data-background-size: cover
+      data-background-opacity: "0.5"
+      data-background-position: center
+      data-background-video-muted: "true"
+      data-background-video-loop: "true"
+    footer: |
+      <img src='resources/images/logo-ufv.png' class='footer-logo-ufv' height='50px'>
+editor: visual
+theme:
+  - scss/main.scss
+---
+
+
+# Apresentação
+
+::: {.subtitle}
+Análise do comportamento aerodinâmico
+:::
+
+---
+
+## Integrantes
+
+- Davi Atayde Cunha
+- Luiz Gustavo Lopes
+- Pedro Henrique Balduino
+- Vinícius Gabriel Marques de Melo
+
+# Sobre o Trabalho
+
+---
+
+## Propósito
+
+- Trazer um pouco do mundo da aerodinâmica e mostrar sua diversidade através de visualizações de dados.
+
+:::notes
+
+:::
+
+---
+
+## Relevância
+
+- Eficiência
+- Segurança
+- Consumo de Combustível e Energia
+- estabilidade
+
+:::notes
+Perceba que o estudo de aerodinâmica tem alta relevância, já que permite com que melhoremos a eficiência, segurança, o consumo de combustível e energia, estabilidade e outros fatores do recurso que depende dela.
+:::
+
+---
+
+## Recursos que Dependem de Aerodinâmica
+
+- Aviões, Helicópteros e Drones
+- Carros, Motos e Bicicletas
+- Trens e Metrôs de Alta Velocidade
+- Ventiladores
+- Turbinas
+
+:::notes
+Aqui abordaremos comparativos entre aviões. Mas temos drones, carros, motos e bicicletas, ventiladores, turbinas de diversos tipos de equipamentos. Existe infinidade de coisas no nosso dia a dia que dependem do estudo da aerodiâmica, que a gente não dá a devida importância porque nós não precisamos nos preocupar. Mas é legal que a gente entenda que há por trás dessas coisas corriqueiras do dia a dia, há um grande estudo por trás.
+:::
+
+---
+
+## Por que é Relevante
+
+# Dashboard
+
+:::notes
+Agora mostraremos nosso Dashboard.
+:::
+
+---
+
+## [Insira o Dashboard]
+
+:::notes
+[(Exemplo de Narrativa, Remover Depois) Aqui temos o comparativo do modelo x com o modelo y. Perceba que modelos de aviões militares são diferentes dos aviões comerciais que são diferentes de modelos menores como aviões táxi.
+Percebam que esse modelo requer que você mantenha esse tipo de curva "a" esse outro que você mantenha um tipo de curva "b"]
+:::

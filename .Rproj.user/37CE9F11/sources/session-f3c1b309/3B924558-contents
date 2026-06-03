@@ -1,0 +1,171 @@
+/**************************************************************************
+Copyright(c) 2026 Vinicius Gabriel Marques de Melo. All rights reserved.
+Contact: contact@monambike.com for more information.
+For license information, please see the LICENSE file in the root directory.
+**************************************************************************/
+
+/*-- scss:rules --*/
+
+.reveal{
+  animation: changebrightness 1200ms ease-out forwards;
+  animation-delay: 1.5s;
+  background:
+    linear-gradient(
+      rgba($black, 0.95),
+      rgba($black, 0.95)
+    ),
+    url("../../../../../resources/images/background-airplane-pattern-gray.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  color: $black;
+  filter: brightness(0);
+  
+  section.level2 {
+    background-color: $white;
+    ul {
+      padding: 20px;
+    }
+  }
+  
+  .title-slide {
+    background-color: $purple_2;
+    color: $white;
+  }
+  
+  h1 {
+    text-shadow: 5px 5px $black;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    background-color: $purple_2;
+    color: $white;
+    text-shadow: 5px 5px $purple_3;
+    padding: 20px;
+  }
+  
+  
+  .footer-logo-ufv {
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 10px;
+    vertical-align: middle;
+    box-shadow: 5px 5px 0px $black;
+  }
+
+  h2 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  section h2::after {
+    background: rgba($white, 0.3);
+    content: "";
+    height: 100%;
+    left: -20%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-20deg);
+    width: 80px;
+  }
+  
+  li {
+    /* <a href="https://www.flaticon.com/free-icons/up-arrow" title="up arrow icons">Up arrow icons created by SumberRejeki - Flaticon</a> */
+    list-style-image: url("../../../../../resources/images/icon-up-arrow.png");
+    padding: 10px 20px;
+  }
+  
+  
+/* ============================================================
+   SPECIFIC SLIDE CUSTOM CSS
+   ============================================================ */
+  /* First Slide - Presentation Start */
+  .title {
+    background-color: rgba($black, 1);
+    border-radius: 2px;
+    color: $purple_3;
+    padding: 20px 0px;
+  }
+  .subtitle {
+    color: $purple_1;
+    opacity: 0;
+  }
+  .slides > section:first-child{
+    background-color: rgba($black, 0.95);
+    border-left: 6px solid $purple_2;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0px $purple_1;
+    padding: 20px;
+  }
+  .slide-background video {
+    filter: blur(10px) brightness(0.5) !important;
+  }
+
+  img {
+    box-shadow: 5px 5x 0px $black;
+    padding: 10px;
+  }
+  .caption {
+    color: $gray;
+    font-style: italic;
+    padding: 10px;
+  }
+
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+  /* ANIMATION ELEMENT ATTRIBUTION */
+  section {
+    /* OPACITY ANIMATION IN SUBTITLES */
+    /* Playing animation for current slide being played */
+    &.present .subtitle {
+      animation: changeopacity 600ms ease-in forwards;
+      animation-delay: 1s;
+    }
+    /* Removing animation state for all slides not being played */
+    &.past .subtitle,
+    &.future .subtitle {
+      animation: none;
+      opacity: 0;
+    }
+
+    /* GLARE ANIMATION IN H2 BACKGROUNDS */
+    /* Playing animation for current slide being played */
+    &.present h2::after {
+      animation: glare 800ms ease-in;
+    }
+    /* Removing animation state for all slides not being played */
+    &.past h2::after,
+    &.future h2::after {
+      animation: none;
+      content: none;
+    }
+    
+    /* FADE UP ANIMATION IN ITEMS FROM LIST */
+    /* Playing animation for current slide being played */
+    section.present li {
+      opacity: 0;
+      animation: fadeup 600ms ease forwards;
+    }
+    /* Removing animation state for all slides not being played */
+    section.past li,
+    section.future li {
+      animation: none;
+      opacity: 0;
+    }
+  }
+  
+  /* ANIMATION ADDITIONAL CODE */
+  /* Making every item in a list animate one after other within a delay */
+  @for $i from 1 through 20 {
+  section.present li:nth-child(#{$i}) {
+      animation-delay: $i * 0.2s;
+    }
+  }
+}
+
