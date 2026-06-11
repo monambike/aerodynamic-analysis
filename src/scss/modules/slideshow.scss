@@ -21,14 +21,14 @@ For license information, please see the LICENSE file in the root directory.
 .reveal{
   background: 
     linear-gradient(
-      rgba($black, 0.95),
-      rgba($black, 0.95)
+      rgba(25, 25, 25, 0.95),
+      rgba(25, 25, 25, 0.95)
     );
   &:not(:has(.present.first-slide)) {
     background:
       linear-gradient(
-        rgba($black, 0.95),
-        rgba($black, 0.95)
+        rgba(25, 25, 25, 0.95),
+        rgba(25, 25, 25, 0.95)
       ),
       url("#{$base-path-images}/background-airplane-pattern-gray.jpg");
     background-position: center;
@@ -99,7 +99,7 @@ For license information, please see the LICENSE file in the root directory.
       width: 80px;
       transform: skewX(-20deg);
 
-      background: rgba($white, 0.3);
+      background: rgba(245, 245, 245, 0.3);
     }
   }
 
@@ -150,7 +150,7 @@ For license information, please see the LICENSE file in the root directory.
   }
 
   .slides > section:first-child{
-    background-color: rgba($black, 0.95);
+    background-color: rgba(25, 25, 25, 0.95);
     border-left: 6px solid $purple2;
     border-bottom-right-radius: 20px;
     box-shadow: 5px 5px 0px $purple1;
