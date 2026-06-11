@@ -3,6 +3,10 @@ title: "Análise de Aerodinâmica"
 subtitle: "Entendendo o comportamento <em>aerodinâmico</em> com a <br> <b>visualização de dados</b>"
 format:
   revealjs:
+    theme:
+      - default
+      - ../scss/main.scss
+      - ../scss/modules/slideshow.scss
     transition: slide
     title-slide-attributes:
       class: first-slide
@@ -17,9 +21,6 @@ format:
     footer: |
       <img src='../resources/images/logo-ufv.png' class='footer-logo-ufv' height='50px'>
 editor: visual
-theme:
-  - ../scss/main.scss
-  - ../scss/modules/slideshow.scss
 ---
 
 ## Integrantes
@@ -35,10 +36,26 @@ theme:
 E também economizar milhões em combustível.
 :::
 
+------------------------------------------------------------------------
+
+## Introdução
+
+Aerodinâmica e Coeficientes Aerodinâmicos
+
+:::notes
+Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâmicos. A 
+:::
+
 ## Mas então...
 
 -   O que faz um avião subir?
 -   Por que aviões tem formatos diferentes?
+
+:::notes
+E um ramo da física (dentro da mecânica dos fluidos, sim, o ar é um fluido) que estuda o movmento do ar e as forças que ele exerce sobre corpos sólidos em movimento ou imersos nele. Ou seja no avião, na pá do ventilador.
+
+Agora os coeficientes aerodinâmicos são grandezas qe quantificam o comportamento desses objetos em um fluido. Tipo a força de resistência, sustentação, instabilidade, etc.
+:::
 
 # DA PÁ DO VENTILADOR AO CAÇA MILITAR
 
