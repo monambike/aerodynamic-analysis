@@ -1,0 +1,44 @@
+#### Column {width=20%}
+
+```{r}
+#| content: toolbar
+#| title: Imagem
+
+tags$img(
+  src = "/resources/images/airfoils/airfoil-wing.png"
+)
+```
+```{r}
+#| content: valuebox
+#| title: Média na Cidade
+
+valor <- 2
+
+list(
+  icon = "airplane-engines",
+  color = "primary",
+  value = valor
+)
+```
+```{r}
+#| content: valuebox
+#| title: Média na Cidade
+
+valor <- 2
+
+list(
+  icon = "airplane-engines",
+  color = "primary",
+  value = valor
+)
+```
+
+#### Column {width=80%}
+
+```{r}
+
+actionButton(
+  "id",
+  "Texto"
+)
+```

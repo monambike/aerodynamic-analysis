@@ -1,0 +1,43 @@
+#### Column {width=20%}
+
+```{r}
+#| content: toolbar
+#| title: Imagem
+
+tags$img(
+  src = "/resources/images/airfoils/airfoil-vertical-stabilizer.jpeg"
+)
+```
+```{r}
+#| content: valuebox
+#| title: Média na Cidade
+
+valor <- 2
+
+list(
+  icon = "airplane-engines",
+  color = "primary",
+  value = valor
+)
+```
+```{r}
+#| content: valuebox
+#| title: Média na Cidade
+
+valor <- 2
+
+list(
+  icon = "airplane-engines",
+  color = "primary",
+  value = valor
+)
+```
+
+#### Column {width=80%}
+
+```{r}
+library(here)
+
+source(here("R/cl-max.R"))
+plot_cd_cl(aeronave_dados$perfil_empenagem_vertical)
+```
