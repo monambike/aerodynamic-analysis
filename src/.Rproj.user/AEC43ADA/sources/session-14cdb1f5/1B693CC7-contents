@@ -5,27 +5,31 @@
 #| title: Imagem
 
 tags$img(
-  src = "/resources/images/airfoils/aircraft.jpg"
+  src = "/resources/images/airfoils/airfoil-wing.png"
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: CLmax
+#| title: Média na Cidade
+
+valor <- 2
 
 list(
   icon = "airplane-engines",
   color = "primary",
-  value = 4
+  value = valor
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: α no CLmax
+#| title: Média na Cidade
+
+valor <- 2
 
 list(
-  icon = "rulers",
+  icon = "airplane-engines",
   color = "primary",
-  value = 4.4
+  value = valor
 )
 ```
 
@@ -35,6 +39,5 @@ list(
 library(here)
 
 source(here("R/cl-max.R"))
-plot_cd_cl(aeronave_dados$aeronave)
+plot_cd_cl(aeronave_dados$perfil_asa)
 ```
-

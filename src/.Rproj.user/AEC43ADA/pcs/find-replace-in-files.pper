@@ -1,6 +1,6 @@
 {
     "dialog-state": {
-        "query": "G:/aerodynamic-analysis/src",
+        "query": "z",
         "path": "",
         "regex": false,
         "caseSensitive": false,
@@ -9,7 +9,7 @@
         "useGitGrep": false,
         "excludeGitIgnore": true,
         "excludeFilePatterns": [],
-        "resultsCount": 0,
+        "resultsCount": 8060,
         "errorCount": 0,
         "replaceErrors": "",
         "projectRelative": true

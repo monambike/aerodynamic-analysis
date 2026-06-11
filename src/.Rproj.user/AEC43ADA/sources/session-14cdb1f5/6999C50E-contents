@@ -16,13 +16,11 @@ format:
 editor_options:
   chunk_output_type: console
 
-
-# (SOLUÇÃO) ERRO: The file 'dashboard.qmd' does not exist in '.../src'
-# A biblioteca Shiny sempre procura pelo arquivo na pasta raíz do projeto. Mas para
-# fins de organização, eu não quero deixar na raiz.
-# Então se der esse erro de cima na hora de rodar, remove o "server: shiny",
-# roda, e depois que funcionar e o navegador abrir coloca de volta e roda de novo.
-# Não me pergunta o porquê que isso funciona, to puto de raiva e eu não sei.
+# O Shiny sempre procura pelo arquivo na pasta raíz do projeto. Mas para
+# fins de organização, não quero deixar na raiz.
+# Então se der problema na hora de rodar pela primeira vez, remove o
+# "server: shiny", roda, e depois coloca de novo e roda.
+# Não me pergunta o porquê isso funciona, que eu não sei.
 # - Vini
 server: shiny
 ---
