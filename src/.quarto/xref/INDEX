@@ -1,11 +1,5 @@
 {
-  "slide-presentation.qmd": {
-    "slide-presentation.html": "5eaa4d5c"
-  },
-  "slideshow/slide-presentation.qmd": {
-    "slide-presentation.html": "2579b8da"
-  },
   "dashboard/dashboard.qmd": {
-    "dashboard.html": "7e6256cf"
+    "dashboard.html": "4251c045"
   }
 }

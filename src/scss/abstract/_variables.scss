@@ -12,7 +12,6 @@ $secondary-color: $black;
 $animation-normal: 800ms;
 $delay-normal: 1s;
 
-$base-path: "../../../../../..";
-$base-path-resources: "#{$base-path}/resources";
+$base-path-resources: "/resources";
 $base-path-images: "#{$base-path-resources}/images";
 $base-path-videos: "#{$base-path-resources}/videos";
