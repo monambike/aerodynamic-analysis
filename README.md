@@ -10,7 +10,7 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
 # Project Members
 
 - **Vinícius Gabriel Marques de Melo**
-- **Davi Atayde**
+- **Davi Atayde Cunha**
 - **Luiz Gustavo Lopes de Souza**
 - **Pedro Henrique Balduino**
 
