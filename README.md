@@ -9,9 +9,9 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
 
 # Project Members
 
-- **Vinícius Gabriel** - Slides and Dashoboard
-- **Davi Atayde** - Plotting
+- **Vinícius Gabriel** - Slides and Dashboard
 - **Luiz Lopes** - Simulation / XFLR5 Modeling
+- **Davi Atayde** - Plotting
 - **Pedro Balduino** - Plotting
 
 # Contact
