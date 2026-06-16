@@ -13,6 +13,7 @@ format:
         - ../scss/main.scss
         - ../scss/modules/dashboard.scss
         - ../scss/themes/dark.scss
+    logo: ../resources/images/logo-ufv.png
 editor_options:
   chunk_output_type: console
 
