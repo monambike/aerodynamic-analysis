@@ -35,29 +35,29 @@ Lista de Símbolos
 ```{r}
 #| content: valuebox
 #| title: CLmax
+#| class: value-box-gold
 
 list(
-  color = "gold",
-  value = sprintf("%.2f", ponto_polar_melhor$cl_cd)
+  value = sprintf("%.2f", ponto_cl_max$CL)
 )
 ```
 
 ```{r}
 #| content: valuebox
-#| title: CLmax
+#| title: α no CLmax
 
 list(
-  color = "gold",
-  value = sprintf("%.2f", ponto_polar_melhor$cl_cd)
+  color = "primary",
+  value = sprintf("%.2f", ponto_cl_max$alpha)
 )
 ```
 
 ```{r}
 #| content: valuebox
-#| title: CLmax
+#| title: (CD/CL)max
 
 list(
-  color = "gold",
+  color = "primary",
   value = sprintf("%.2f", ponto_polar_melhor$cl_cd)
 )
 ```
