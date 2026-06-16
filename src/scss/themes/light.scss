@@ -6,3 +6,22 @@ For license information, please see the LICENSE file in the root directory.
 
 /*-- scss:rules --*/
 
+/* Navbar */
+.navbar {
+  background-color: $purple3;
+}
+
+/* Navbar (Active) */
+.quarto-dashboard #quarto-dashboard-header .navbar .navbar-nav .active {
+  background-color: $purple2;
+}
+
+/* Cards */
+.html-fill-item.html-fill-container.value-box-grid {
+  background-color: $purple2;
+}
+
+/* Checkbox */
+.form-check-input:checked, .shiny-input-container .checkbox input:checked, .shiny-input-container .checkbox-inline input:checked, .shiny-input-container .radio input:checked, .shiny-input-container .radio-inline input:checked {
+  background-color: $purple2;
+}

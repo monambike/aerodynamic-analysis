@@ -8,12 +8,12 @@ For license information, please see the LICENSE file in the root directory.
 
 /* Navbar */
 .navbar {
-  background-color: yellow;
+  background-color: $purple3;
 }
 
 /* Navbar (Active) */
 .quarto-dashboard #quarto-dashboard-header .navbar .navbar-nav .active {
-  background-color: blue;
+  background-color: $purple2;
 }
 
 /* Cards */
@@ -21,7 +21,7 @@ For license information, please see the LICENSE file in the root directory.
   background-color: $purple2;
 }
 
-/* Select Box */
-.shiny-input-select {
-  color: $white;
+/* Checkbox */
+.form-check-input:checked, .shiny-input-container .checkbox input:checked, .shiny-input-container .checkbox-inline input:checked, .shiny-input-container .radio input:checked, .shiny-input-container .radio-inline input:checked {
+  background-color: $purple2;
 }

@@ -24,12 +24,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
-  
-  img.navbar-logo.light-content.d-inline-block {
-    padding: 5px;
+}
 
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: inset 2px 2px 4px 1px;
-  }
+img.navbar-logo.d-inline-block {
+  padding: 5px;
+
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: inset 2px 2px 4px 1px;
 }
