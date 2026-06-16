@@ -1,0 +1,31 @@
+{
+    "id": "EB1A55A0",
+    "path": "G:/aerodynamic-analysis/src/dashboard/sections/aircraft.qmd",
+    "project_path": "dashboard/sections/aircraft.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1781646470809.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "32,17",
+        "scrollLine": "32",
+        "rmdVisualMode": "false",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "336:320.0000305175781",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1781649535,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1781649535852,
+    "read_only": false,
+    "read_only_alternatives": []
+}
