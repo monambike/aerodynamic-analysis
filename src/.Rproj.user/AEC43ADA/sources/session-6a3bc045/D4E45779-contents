@@ -2,43 +2,37 @@
 
 ```{r}
 #| content: toolbar
-#| title: Imagem
 
 tags$img(
-  src = "/resources/images/airfoils/aircraft.jpg"
+  src = "/resources/images/airfoils/airfoil-horizontal-stabilizer.jpeg"
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: Média na Cidade
-
-valor <- 2
+#| title: CLmax
 
 list(
   icon = "airplane-engines",
   color = "primary",
-  value = valor
+  value = 3
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: Média na Cidade
-
-valor <- 2
+#| title: α no CLmax
 
 list(
-  icon = "airplane-engines",
+  icon = "rulers",
   color = "primary",
-  value = valor
+  value = 3.3
 )
 ```
 
 #### Column {width=80%}
 
 ```{r}
+library(here)
 
-actionButton(
-  "id",
-  "Texto"
-)
+source(here("R/cl-max.R"))
+plot_cd_cl(aeronave_dados$perfil_empenagem_horizontal)
 ```

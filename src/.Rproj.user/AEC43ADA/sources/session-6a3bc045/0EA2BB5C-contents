@@ -2,34 +2,29 @@
 
 ```{r}
 #| content: toolbar
-#| title: Imagem
 
 tags$img(
-  src = "/resources/images/airfoils/airfoil-wing.png"
+  src = "/resources/images/airfoils/airfoil-vertical-stabilizer.jpeg"
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: Média na Cidade
-
-valor <- 2
+#| title: CLmax
 
 list(
   icon = "airplane-engines",
   color = "primary",
-  value = valor
+  value = 2
 )
 ```
 ```{r}
 #| content: valuebox
-#| title: Média na Cidade
-
-valor <- 2
+#| title: α no CLmax
 
 list(
-  icon = "airplane-engines",
+  icon = "rulers",
   color = "primary",
-  value = valor
+  value = 2.2
 )
 ```
 
@@ -39,5 +34,5 @@ list(
 library(here)
 
 source(here("R/cl-max.R"))
-plot_cd_cl(aeronave_dados$perfil_asa)
+plot_cd_cl(aeronave_dados$perfil_empenagem_vertical)
 ```

@@ -20,18 +20,18 @@ editor_options:
 # (SOLUÇÃO) ERRO: The file 'dashboard.qmd' does not exist in '.../src'
 # A biblioteca Shiny sempre procura pelo arquivo na pasta raíz do projeto. Mas para
 # fins de organização, eu não quero deixar na raiz.
-# Então se der esse erro de cima na hora de rodar, remove o "server: shiny",
-# roda, e depois que funcionar e o navegador abrir coloca de volta e roda de novo.
+# Então se der esse erro de cima na hora de rodar, remova o "server: shiny", rode,
+# e depois que funcionar e o navegador abrir coloca de volta e roda de novo.
 # Não me pergunta o porquê que isso funciona, to puto de raiva e eu não sei.
 # - Vini
-server: shiny
 ---
 
 ```{r}
 #| context: setup
 #| include: false
-library(shiny)
 library(bslib)
+library(here)
+library(shiny)
 ```
 
 # Aeronave e Perfis
@@ -59,6 +59,8 @@ library(bslib)
 
 
 # Comparar Perfis
+
+## Row {height=30%}
 
 ```{r}
 #| content: sidebar
@@ -97,17 +99,9 @@ div (
 )
 ```
 
-## Row {height=50%}
-
-### Chart 1
+## Row {height=70%}
 
 ```{r}
-
-actionButton(
-  "id",
-  "teste"
-)
-
 renderPlot({
   dataframe <- switch(
     input$filter_airfoil,
@@ -123,19 +117,8 @@ renderPlot({
     "cl_alpha" = plot_cl_alpha,
     "cd_alpha" = plot_cd_alpha
   )
-
-  plot_function(dataframe)
 })
-```
 
-## Row {height=50%}
-
-### Chart 2
-
-```{r}
-```
-
-### Chart 3
-
-```{r}
+source(here("R/cl-max.R"))
+plot_cd_cl(aeronave_dados$perfil_asa)
 ```

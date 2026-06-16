@@ -2,6 +2,10 @@
     "sortOrder": [
         {
             "columnIndex": 2,
+            "ascending": true
+        },
+        {
+            "columnIndex": 1,
             "ascending": false
         },
         {
@@ -13,5 +17,5 @@
             "ascending": false
         }
     ],
-    "path": "G:/aerodynamic-analysis/src"
+    "path": "G:/aerodynamic-analysis/src/dashboard/sections"
 }

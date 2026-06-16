@@ -1,0 +1,29 @@
+/**************************************************************************
+Copyright(c) 2026 Vinicius Gabriel Marques de Melo. All rights reserved.
+Contact: contact@monambike.com for more information.
+For license information, please see the LICENSE file in the root directory.
+**************************************************************************/
+
+/*-- scss:rules --*/
+
+/* Neutral Color */
+$black: var(--black);
+$gray: var(--gray);
+$white: var(--white);
+
+/* Application Colors */
+$purple1: var(--purple1);
+$purple2: var(--purple2);
+$purple3: var(--purple3);
+
+:root {
+/* Neutral Color */
+  --black: rgba(25, 25, 25);
+  --gray: rgba(45, 45, 45);
+  --white: rgba(245, 245, 245);
+  
+  /* Application Colors */
+  --purple1: rgba(234, 227, 255);
+  --purple2: rgba(103, 63, 224);
+  --purple3: rgba(140, 102, 255);
+}

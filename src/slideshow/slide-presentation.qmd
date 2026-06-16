@@ -42,8 +42,8 @@ E também economizar milhões em combustível.
 
 Aerodinâmica e Coeficientes Aerodinâmicos
 
-:::notes
-Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâmicos. A 
+::: notes
+Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâmicos. A
 :::
 
 ## Mas então...
@@ -51,7 +51,7 @@ Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâ
 -   O que faz um avião subir?
 -   Por que aviões tem formatos diferentes?
 
-:::notes
+::: notes
 E um ramo da física (dentro da mecânica dos fluidos, sim, o ar é um fluido) que estuda o movmento do ar e as forças que ele exerce sobre corpos sólidos em movimento ou imersos nele. Ou seja no avião, na pá do ventilador.
 
 Agora os coeficientes aerodinâmicos são grandezas qe quantificam o comportamento desses objetos em um fluido. Tipo a força de resistência, sustentação, instabilidade, etc.

@@ -2,7 +2,6 @@
 
 ```{r}
 #| content: toolbar
-#| title: Imagem
 
 tags$img(
   src = "/resources/images/airfoils/airfoil-horizontal-stabilizer.jpeg"
