@@ -1,37 +1,69 @@
-#### Column {width=20%}
+```{r}
+#| context: setup
+#| include: false
+
+library(here)
+
+source(here("R/aerodynamics_plots.R"))
+```
+
+#### Column {width="20%"}
+
+##### Row {height="30%"}
 
 ```{r}
 #| content: toolbar
 
 tags$img(
-  src = "/resources/images/airfoils/airfoil-horizontal-stabilizer.jpeg"
+  src = "/resources/images/airfoils/aircraft.jpg"
 )
 ```
+
+##### Row {height="70%"}
+
+Lista de Símbolos
+
+| Símbolo | Significado                     |
+|---------|---------------------------------|
+| CL      | Coeficiente de sustentação (3D) |
+| CD      | Coeficiente de arrasto (3D)     |
+
+#### Column {width="80%"}
+
+##### Row {height="20%"}
+
 ```{r}
 #| content: valuebox
 #| title: CLmax
+#| class: value-box-gold
 
 list(
-  icon = "airplane-engines",
-  color = "primary",
-  value = 3
+  value = sprintf("%.2f", ponto_cl_max$CL)
 )
 ```
+
 ```{r}
 #| content: valuebox
 #| title: α no CLmax
 
 list(
-  icon = "rulers",
   color = "primary",
-  value = 3.3
+  value = sprintf("%.2f", ponto_cl_max$alpha)
 )
 ```
 
-#### Column {width=80%}
+```{r}
+#| content: valuebox
+#| title: (CD/CL)max
+
+list(
+  color = "primary",
+  value = sprintf("%.2f", ponto_polar_melhor$cl_cd)
+)
+```
+
+##### Row {height="80%"}
 
 ```{r}
-library(here)
-
-source(here("R/aerodynamics_plots.R"))
+plot_aircraft_cl_cd(aircraft_data$airfoil_wing)
 ```
