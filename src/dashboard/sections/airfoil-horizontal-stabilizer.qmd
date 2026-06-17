@@ -28,16 +28,16 @@ Lista de Símbolos
 | CL      | Coeficiente de sustentação (3D) |
 | CD      | Coeficiente de arrasto (3D)     |
 
-#### Column {width="80%"}
+#### Column {width="60%"}
 
 ##### Row {height="20%"}
 
 ```{r}
 #| content: valuebox
 #| title: CLmax
-#| class: value-box-gold
 
 list(
+  color = "primary",
   value = sprintf("%.2f", ponto_cl_max$CL)
 )
 ```
@@ -48,7 +48,7 @@ list(
 
 list(
   color = "primary",
-  value = sprintf("%.2f", ponto_cl_max$alpha)
+  value = sprintf("%.1f°", ponto_cl_max$alpha)
 )
 ```
 
@@ -65,5 +65,30 @@ list(
 ##### Row {height="80%"}
 
 ```{r}
-plot_aircraft_cl_cd(aircraft_data$airfoil_wing)
+plot_aircraft_cl_cd()
 ```
+
+#### Column {width="20%"}
+
+##### Row {height="40%"}
+
+```{r}
+#| title: Gráfico de Sustentação
+#| caption: Expanda para visualizar o gráfico de sustentação da aeronave completa.
+plot_aircraft_cl_alpha()
+```
+
+##### Row {height="60%"}
+
+::: {}
+:::
+
+#### Column
+<!--
+NÃO REMOVER ESTA COLUNA.
+
+Por algum motivo insondável do Quarto Dashboard,
+a remoção desta coluna quebra completamente o layout.
+Se descobrir o motivo, me avise.
+- Vini do passado
+-->
