@@ -25,8 +25,8 @@ Lista de Símbolos
 
 | Símbolo | Significado                     |
 |---------|---------------------------------|
-| CL      | Coeficiente de sustentação (3D) |
-| CD      | Coeficiente de arrasto (3D)     |
+| CL      | Coeficiente de Sustentação (3D) |
+| CD      | Coeficiente de Arrasto (3D)     |
 
 #### Column {width="60%"}
 
@@ -65,7 +65,7 @@ list(
 ##### Row {height="80%"}
 
 ```{r}
-plot_aircraft_cl_cd()
+plot_aircraft_cl_cd(df_3d)
 ```
 
 #### Column {width="20%"}
@@ -75,7 +75,7 @@ plot_aircraft_cl_cd()
 ```{r}
 #| title: Gráfico de Sustentação
 #| caption: Expanda para visualizar o gráfico de sustentação da aeronave completa.
-plot_aircraft_cl_alpha()
+plot_aircraft_cl_alpha(df_3d)
 ```
 
 ##### Row {height="60%"}
@@ -83,7 +83,7 @@ plot_aircraft_cl_alpha()
 ::: {}
 :::
 
-#### Column
+#### Column {width="0%"}
 <!--
 NÃO REMOVER ESTA COLUNA.
 
