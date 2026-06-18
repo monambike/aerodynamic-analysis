@@ -1,0 +1,15 @@
+library(shiny)
+library(quarto)
+
+# Define the server and UI using the Quarto document
+shinyApp(
+  ui = function() {
+    # This reads the dashboard.qmd in the same folder
+    quarto::quarto_render("dashboard/dashboard.qmd", execute = FALSE)
+    HTML(readLines("dashboard/dashboard.html"))
+  },
+  server = function(input, output, session) {
+    # Source the server context from the qmd file
+    # (Optional: you can also keep all server logic in app.R for better debugging)
+  }
+)
