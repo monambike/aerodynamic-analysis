@@ -28,7 +28,7 @@ extrair_e_limpar <- function(linhas_texto, inicio, fim) {
 }
 
 
-airfoil_coordinates <- function(file_path, plot_title) {
+airfoil_coordinates <- function(file_path) {
   linhas <- readLines(get_data_file_path(file_path))
 
   # Identifica onde começa cada seção dentro do CSV
@@ -51,7 +51,7 @@ airfoil_coordinates <- function(file_path, plot_title) {
   # 3. Prepara a janela gráfica
   plot(NULL, xlim = xlims, ylim = ylims, asp = 1,
        xlab = "X (mm)", ylab = "Y (mm)",
-       main = plot_title)
+       main = "Perfil Geométrico do Aerofólio (Acauã 24)")
 
   # 4. Adiciona as linhas de grade de fundo
   grid()
