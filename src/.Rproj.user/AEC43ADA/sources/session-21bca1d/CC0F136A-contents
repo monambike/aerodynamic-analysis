@@ -26,7 +26,8 @@ library(bslib)
 library(here)
 library(shiny)
 
-source(here("R/aerodynamics_plots.R"))
+source(here("R/aircraft_plots.R"))
+source(here("R/aircraft_coordinates.R"))
 ```
 
 # Visualizar Aeronave e Perfis

@@ -1,0 +1,29 @@
+# **************************************************************************
+# Copyright(c) 2026 UFV - Universidade Federal de Viçosa. All rights reserved.
+# Project from: Vinícius Gabriel, Luiz Lopes, Davi Atayde, Pedro Balduino.
+# For license information, please see the LICENSE file in the root directory.
+# **************************************************************************/
+
+
+library(here)
+library(readr)
+
+
+DATA_FOLDER = here("../data")
+
+AIRFOIL_WING_FILE_PATH = "airfoil-wing.csv"
+AIRFOIL_HORIZONTAL_STABILIZER_FILE_PATH = "airfoil-horizontal-stabilizer.csv"
+AIRFOIL_VERTICAL_STABILIZER_FILE_PATH = "airfoil-vertical-stabilizer.csv"
+AIRCRAFT_FILE_PATH = "aircraft.csv"
+
+get_data_file <- function(file_name) {
+  result <- read_csv(file.path(DATA_FOLDER, file_name), show_col_types = FALSE)
+  return(result)
+}
+
+aircraft_dataframe <- list(
+  airfoil_wing = get_data_file(AIRFOIL_WING_FILE_PATH),
+  airfoil_horizontal_stabilizer = get_data_file(AIRFOIL_HORIZONTAL_STABILIZER_FILE_PATH),
+  airfoil_vertical_stabilizer = get_data_file(AIRFOIL_VERTICAL_STABILIZER_FILE_PATH),
+  aircraft = get_data_file(AIRCRAFT_FILE_PATH)
+)
