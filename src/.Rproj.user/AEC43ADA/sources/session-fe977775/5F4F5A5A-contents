@@ -38,8 +38,8 @@ df_2d <- bind_rows(df_asa, df_eh, df_ev)
 df_3d <- df_aviao
 
 destacar_origem <- list(
-  geom_hline(yintercept = 0, color = "black", linewidth = 0.5, alpha = 0.5),
-  geom_vline(xintercept = 0, color = "black", linewidth = 0.5, alpha = 0.5)
+  geom_hline(yintercept = 0, color = "#111111", linewidth = 0.5, alpha = 0.5),
+  geom_vline(xintercept = 0, color = "#111111", linewidth = 0.5, alpha = 0.5)
 )
 
 escala_alpha <- scale_x_continuous(breaks = seq(-20, 20, by = 2))
@@ -72,9 +72,13 @@ plot_airfoil_cl_alpha <- function(df) {
     geom_point(
       data = ponto_cl_max, 
       aes(color = Perfil, text = sprintf("MÁXIMO Cl (%s)\nAlpha: %.1fº\nCl: %.3f", Perfil, alpha, CL)), 
-      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE, fill = "gold"
+      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE,
+      fill = "gold", color = "#111111"
     ) +
-    labs(title = "2D: Coef. de Sustentação (Cl x α)", x = "Alpha (º)", y = "Cl") +
+    labs(
+      title = "2D: Coef. de Sustentação (Cl x α)",
+      x = "Alpha (º)", y = "Cl"
+    ) +
     scale_color_manual(values = custom_colors) +
     airfoil_theme()
 }
@@ -97,9 +101,13 @@ plot_airfoil_cd_alpha <- function(df) {
     geom_point(
       data = ponto_cd_min,
       aes(text = sprintf("MÍNIMO Cd (%s)\nAlpha: %.1fº\nCd: %.4f", Perfil, alpha, CD)), 
-      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE, fill = "cyan", color = "black"
+      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE,
+      fill = "cyan", color = "#111111"
     ) +
-    labs(title = "2D: Coef. de Arrasto (Cd x α)", x = "Alpha (º)", y = "Cd") +
+    labs(
+      title = "2D: Coef. de Arrasto (Cd x α)",
+      x = "Alpha (º)", y = "Cd"
+    ) +
     scale_color_manual(values = custom_colors) +
     airfoil_theme()
 }
@@ -117,17 +125,18 @@ plot_airfoil_clcd_alpha <- function(df) {
     geom_line(linewidth = LINE_WIDTH) +
     geom_point(
       aes(text = sprintf("Perfil: %s\nAlpha: %.1fº\nCl/Cd: %.1f", Perfil, alpha, cl_cd)),
-      size = POINT_SIZE, alpha = POINT_ALPHA
+      size = POINT_SIZE, alpha = POINT_ALPHA, show.legend = FALSE
     ) +
     # Destacando máxima eficiência (Verde com borda preta)
     geom_point(
       data = ponto_efic_max,
       aes(text = sprintf("MÁXIMA EFICIÊNCIA (%s)\nAlpha: %.1fº\nCl/Cd: %.1f", Perfil, alpha, cl_cd)), 
-      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE, fill = "springgreen", color = "black") +
+      size = HIGHLIGHT_POINT_SIZE, shape = HIGHLIGHT_POINT_SHAPE, stroke = HIGHLIGHT_POINT_STROKE, show.legend = FALSE,
+      fill = "springgreen", color = "#111111"
+    ) +
     labs(
       title = "2D: Eficiência (Cl/Cd x α)",
-      x = "Alpha (º)",
-      y = "Cl/Cd"
+      x = "Alpha (º)", y = "Cl/Cd"
     ) +
     scale_color_manual(values = custom_colors) +
     airfoil_theme()
@@ -146,13 +155,13 @@ plot_aircraft_cl_alpha <- function(df) {
     geom_line(linewidth = LINE_WIDTH, color = "purple") +
     geom_point(
       aes(text = sprintf("Alpha: %.1fº\nCL 3D: %.3f", alpha, CL)), 
-      size = POINT_SIZE, show.legend = FALSE, color = "purple"
+      size = POINT_SIZE, show.legend = FALSE,
+      color = "purple"
     ) +
     labs(
       title = "3D: Sustentação (CL x α)", 
       subtitle = "Limitações computacionais (X5): Curva tendendo a linear",
-      x = "Alpha (º)", 
-      y = "CL 3D"
+      x = "Alpha (º)", y = "CL 3D"
     ) +
     airfoil_theme()
 }
@@ -170,18 +179,20 @@ plot_aircraft_cl_cd <- function(df) {
     geom_path(linewidth = LINE_WIDTH, color = "firebrick") + 
     geom_point(
       aes(text = sprintf("CD: %.4f\nCL: %.3f\nCl/Cd: %.1f", CD, CL, cl_cd)), 
-      size = POINT_SIZE, color = "firebrick"
+      size = POINT_SIZE,
+      color = "firebrick"
     ) +
     # Destacando ponto ótimo 3D
     geom_point(
       data = ponto_polar_melhor,
-      aes(text = sprintf("MELHOR RAZÃO (CL/CD)\nCD: %.4f\nCL: %.3f\nCL/CD: %.4f\n", CD, CL, CL/CD)), 
-       size = HIGHLIGHT_POINT_SIZE, stroke = HIGHLIGHT_POINT_STROKE, shape = HIGHLIGHT_POINT_SHAPE, fill = "gold", color = "black"
+      aes(
+        text = sprintf("MELHOR RAZÃO (CL/CD)\nCD: %.4f\nCL: %.3f\nCL/CD: %.4f\n", CD, CL, CL/CD)), 
+        size = HIGHLIGHT_POINT_SIZE, stroke = HIGHLIGHT_POINT_STROKE, shape = HIGHLIGHT_POINT_SHAPE,
+        fill = "gold", color = "#111111"
     ) +
     labs(
       title = "3D: Polar de Arrasto (CD x CL)",
-      x = "CD (Arrasto)",
-      y = "CL (Sustentação)"
+      x = "CD (Arrasto)", y = "CL (Sustentação)"
     ) +
     airfoil_theme()
 }
