@@ -3,7 +3,7 @@
     "path": "G:/aerodynamic-analysis/src/dashboard/sections/airfoil-vertical-stabilizer.qmd",
     "project_path": "dashboard/sections/airfoil-vertical-stabilizer.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "667204554",
     "contents": "",
     "dirty": false,
     "created": 1781660779842.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "43,29",
-        "scrollLine": "32"
+        "cursorPosition": "53,3",
+        "scrollLine": "25"
     },
     "folds": "",
-    "lastKnownWriteTime": 1781730792,
+    "lastKnownWriteTime": 1781745977,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1781730792262,
+    "last_content_update": 1781745977762,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -44,7 +44,6 @@ plot_airfoil_cd_alpha(df_ev)
 plot_airfoil_clcd_alpha(df_ev)
 ```
 
-#### Column {width="0%"}
 <!--
 NÃO REMOVER ESTA COLUNA.
 

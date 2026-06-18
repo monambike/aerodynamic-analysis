@@ -30,6 +30,12 @@ escala_alpha <- scale_x_continuous(breaks = seq(-20, 20, by = 2))
 
 ponto_cl_max <- df_2d %>% group_by(Perfil) %>% filter(CL == max(CL)) %>% slice(1) %>% ungroup()
 
+custom_colors = c(
+  "Asa" = "#E41A1C",
+  "Emp. Horizontal" = "#377EB8",
+  "Emp. Vertical" = "#4DAF4A"
+)
+
 # 2D: Coef. de Sustentação Cl x α
 plot_airfoil_cl_alpha <- function(df) {
   ggplot(df, aes(x = alpha, y = CL, color = Perfil)) +
@@ -45,7 +51,7 @@ plot_airfoil_cl_alpha <- function(df) {
     labs(title = "2D: Coef. de Sustentação (Cl x α)", x = "Alpha (º)", y = "Cl") +
     theme_minimal() +
     theme(panel.grid.minor = element_blank()) +
-    scale_color_brewer(palette = "Set1")
+    scale_color_manual(values = custom_colors)
 }
 
 # p_cl_alpha <- ggplotly(g1, tooltip = "text", width = 700, height = 800)
@@ -69,7 +75,7 @@ plot_airfoil_cd_alpha <- function(df) {
     labs(title = "2D: Coef. de Arrasto (Cd x α)", x = "Alpha (º)", y = "Cd") +
     theme_minimal() +
     theme(panel.grid.minor = element_blank()) +
-    scale_color_brewer(palette = "Set1")
+    scale_color_manual(values = custom_colors)
 }
 
 # p_cd_alpha <- ggplotly(g2, tooltip = "text", width = 700, height = 800)
@@ -95,7 +101,7 @@ plot_airfoil_clcd_alpha <- function(df) {
     labs(title = "2D: Eficiência (Cl/Cd x α)", x = "Alpha (º)", y = "Cl/Cd") +
     theme_minimal() +
     theme(panel.grid.minor = element_blank()) +
-    scale_color_brewer(palette = "Set1")
+    scale_color_manual(values = custom_colors)
 }
 
 # p_clcd_alpha <- ggplotly(g3, tooltip = "text", width = 700, height = 800)
