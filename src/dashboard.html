@@ -829,19 +829,34 @@ source(here("R/aerodynamics_plots.R"))
 # df_eh
 # df_ev
 
-output$airfoil_plot <- renderPlot({
-switch(
-  input$filter_metric,
-
-  "cl_alpha" =
-    plot_airfoil_cl_alpha(df_asa),
-
-  "cd_alpha" =
-    plot_airfoil_cd_alpha(df_asa),
-
-  "clcd_alpha" =
-    plot_airfoil_clcd_alpha(df_asa)
+df_map <- list(
+  airfoil_wing = df_asa,
+  airfoil_horizontal_stabilizer = df_eh,
+  airfoil_vertical_stabilizer = df_ev
 )
+
+# Merging airfoil dataframes into a single one
+df_2d_filter <- reactive({
+  req(input$filter_airfoil)
+
+  bind_rows(df_map[input$filter_airfoil])
+})
+
+output$airfoil_plot <- renderPlot({
+  df <- df_2d_filter()
+
+  switch(
+    input$filter_metric,
+  
+    "cl_alpha" =
+      plot_airfoil_cl_alpha(df),
+  
+    "cd_alpha" =
+      plot_airfoil_cd_alpha(df),
+  
+    "clcd_alpha" =
+      plot_airfoil_clcd_alpha(df)
+  )
 })
 </script>
  
