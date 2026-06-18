@@ -1,2 +1,7 @@
 docs/** linguist-generated=true
 .Rproj.user/** linguist-generated=true
+
+*.html -linguist-detectable
+*.scss -linguist-detectable
+*.css -linguist-detectable
+*.js -linguist-detectable
