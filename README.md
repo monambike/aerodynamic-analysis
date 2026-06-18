@@ -3,9 +3,9 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
 
 # Screenshots
 
-<img width="959" height="539" alt="Screenshot 2026-06-11 194934" src="https://github.com/user-attachments/assets/b9ee43c9-823d-4f5a-b447-3573e62faf5b" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/c7bc9290-244d-4a32-85cb-fe56a0ae603f" />
 
-<img width="959" height="539" alt="Screenshot 2026-06-11 194941" src="https://github.com/user-attachments/assets/65cc2b1e-0dae-4989-b2ed-9ca6dbd00efc" />
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/4103eb10-f9ee-44c0-aee3-7e6aad4ffd66" />
 
 # Project Members
 
