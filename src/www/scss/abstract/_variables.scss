@@ -1,0 +1,17 @@
+/**************************************************************************
+Copyright(c) 2026 Vinicius Gabriel Marques de Melo. All rights reserved.
+Contact: contact@monambike.com for more information.
+For license information, please see the LICENSE file in the root directory.
+**************************************************************************/
+
+/*-- scss:rules --*/
+
+$primary-color: $white;
+$secondary-color: $black;
+
+$animation-normal: 800ms;
+$delay-normal: 1s;
+
+$base-path-resources: "/www/resources";
+$base-path-images: "#{$base-path-resources}/images";
+$base-path-videos: "#{$base-path-resources}/videos";

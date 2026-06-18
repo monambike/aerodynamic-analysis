@@ -1,0 +1,122 @@
+---
+title: "Análise de Perfis Aerodinâmicos"
+format:
+  dashboard:
+    theme:
+      light: 
+        - pulse
+        - www/scss/main.scss
+        - www/scss/views/dashboard.scss
+        - www/scss/themes/light.scss
+      dark:
+        - darkly
+        - www/scss/main.scss
+        - www/scss/views/dashboard.scss
+        - www/scss/themes/dark.scss
+    logo: www/resources/images/logo-ufv.png
+editor_options:
+  chunk_output_type: console
+server: shiny
+---
+
+```{r}
+#| context: setup
+#| include: false
+library(bslib)
+library(here)
+library(shiny)
+
+source(here("R/aerodynamics_plots.R"))
+```
+
+# Visualizar Aeronave e Perfis
+
+## Column {.tabset}
+
+### {{< var aircraft >}}
+
+{{< include sections/aircraft.qmd >}}
+
+
+### {{< var airfoil_wing >}}
+
+{{< include sections/airfoil-wing.qmd >}}
+
+
+### {{< var airfoil_horizontal_stabilizer >}}
+
+
+{{< include sections/airfoil-horizontal-stabilizer.qmd >}}
+
+### {{< var airfoil_vertical_stabilizer >}}
+
+{{< include sections/airfoil-vertical-stabilizer.qmd >}}
+
+
+# Comparar Métricas de Perfis
+
+```{r}
+#| content: card-sidebar
+#| title: Configurações
+
+div (
+  class = "airfoil-filters",
+
+  selectInput(
+    "filter_metric",
+    "Métrica:",
+    choices = c(
+      "(Cl x Alfa) - Sustentação" = "cl_alpha",
+      "(Cd x Alfa) - Arrasto" = "cd_alpha",
+      "(Cd/Cl x Alfa) - Eficiência" = "clcd_alpha"
+    )
+  ),
+  
+  selectInput(
+    "filter_axis_x",
+    "Eixo X:",
+    choices = c(
+      "Alfa (Ângulo de Ataque)" = "alpha"
+    )
+  ),
+  
+  checkboxGroupInput( 
+    "filter_airfoil", 
+    "Visualizar Perfis:", 
+    c( 
+      "Asa" = "airfoil_wing",
+      "Empenagem (Horizontal)" = "airfoil_horizontal_stabilizer", 
+      "Empenagem (Vertical)" = "airfoil_vertical_stabilizer" 
+    ) 
+  )
+)
+```
+
+## Row {height=100%}
+
+```{r}
+plotOutput("airfoil_plot")
+```
+
+```{r}
+#| context: server
+# df_3d
+# df_asa
+# df_eh
+# df_ev
+
+output$airfoil_plot <- renderPlot({
+switch(
+  input$filter_metric,
+
+  "cl_alpha" =
+    plot_airfoil_cl_alpha(df_asa),
+
+  "cd_alpha" =
+    plot_airfoil_cd_alpha(df_asa),
+
+  "clcd_alpha" =
+    plot_airfoil_clcd_alpha(df_asa)
+)
+})
+```

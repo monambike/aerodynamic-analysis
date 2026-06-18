@@ -1,0 +1,55 @@
+```{r}
+#| context: setup
+#| include: false
+
+library(here)
+
+source(here("R/aerodynamics_plots.R"))
+```
+
+#### Column {width="20%"}
+
+##### Row {height="30%"}
+
+```{r}
+#| content: toolbar
+
+tags$img(
+  src = "www/resources/images/aircraft.jpg"
+)
+```
+
+##### Row {height="70%"}
+
+Lista de Símbolos
+
+| Símbolo | Significado                     |
+|---------|---------------------------------|
+| Cl      | Coeficiente de Sustentação (2D) |
+| Cd      | Coeficiente de Arrasto (2D)     |
+| α       | Ângulo de Ataque                |
+
+#### Column {width="80%"}
+
+##### Row {height="100%"}
+
+###### Column
+```{r}
+plot_airfoil_cl_alpha(df_asa)
+plot_airfoil_cd_alpha(df_asa)
+```
+
+###### Column
+```{r}
+#| title: "Eficiência = Sustentação / Arrasto"
+plot_airfoil_clcd_alpha(df_asa)
+```
+
+<!--
+NÃO REMOVER ESTA COLUNA.
+
+Por algum motivo insondável do Quarto Dashboard,
+a remoção desta coluna quebra completamente o layout.
+Se descobrir o motivo, me avise.
+- Vini do passado
+-->
