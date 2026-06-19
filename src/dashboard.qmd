@@ -5,14 +5,14 @@ format:
     theme:
       light: 
         - pulse
-        - www/scss/main.scss
-        - www/scss/views/dashboard.scss
-        - www/scss/themes/light.scss
+        - scss/main.scss
+        - scss/views/dashboard.scss
+        - scss/themes/light.scss
       dark:
         - darkly
-        - www/scss/main.scss
-        - www/scss/views/dashboard.scss
-        - www/scss/themes/dark.scss
+        - scss/main.scss
+        - scss/views/dashboard.scss
+        - scss/themes/dark.scss
     logo: www/resources/images/logo-ufv.png
 editor_options:
   chunk_output_type: console
@@ -30,28 +30,29 @@ source(here("R/aircraft_plots.R"))
 source(here("R/airfoil_coordinates.R"))
 ```
 
+
 # Visualizar Aeronave e Perfis
 
 ## Column {.tabset}
 
 ### {{< var aircraft >}}
 
-{{< include sections/aircraft.qmd >}}
+{{< include dashboard-sections/aircraft.qmd >}}
 
 
 ### {{< var airfoil_wing >}}
 
-{{< include sections/airfoil-wing.qmd >}}
+{{< include dashboard-sections/airfoil-wing.qmd >}}
 
 
 ### {{< var airfoil_horizontal_stabilizer >}}
 
 
-{{< include sections/airfoil-horizontal-stabilizer.qmd >}}
+{{< include dashboard-sections/airfoil-horizontal-stabilizer.qmd >}}
 
 ### {{< var airfoil_vertical_stabilizer >}}
 
-{{< include sections/airfoil-vertical-stabilizer.qmd >}}
+{{< include dashboard-sections/airfoil-vertical-stabilizer.qmd >}}
 
 
 # Comparar Métricas de Perfis
