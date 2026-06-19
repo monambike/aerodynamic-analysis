@@ -1,0 +1,31 @@
+{
+    "id": "7AE25B35",
+    "path": "G:/aerodynamic-analysis/src/slide-presentation.qmd",
+    "project_path": "slide-presentation.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1781821716863.0,
+    "source_on_save": true,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "0",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "2:128.14816284179688",
+        "cursorPosition": "143,0",
+        "scrollLine": "115"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1781885270,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1781885270211,
+    "read_only": false,
+    "read_only_alternatives": []
+}

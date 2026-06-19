@@ -4,5 +4,8 @@
   },
   "dashboard/dashboard.qmd": {
     "dashboard.html": "affb306f"
+  },
+  "slide-presentation.qmd": {
+    "slide-presentation.html": "ae92c0a0"
   }
 }
