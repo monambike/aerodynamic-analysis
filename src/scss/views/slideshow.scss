@@ -182,6 +182,10 @@ $font-family-sans-serif: "Montserrat Regular";
     padding: 0 !important;
     margin: 0 !important;
   }
+  /* Making footer not interfere in dashboard interactions */
+  .footer {
+    pointer-events: none;
+  }
 
   /* Hamburguer Menu Button */
   .slide-menu-button .fa-bars::before {
