@@ -8,7 +8,7 @@ For license information, please see the LICENSE file in the root directory.
 
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("#{$base-path-fonts}/montserra/static/Montserrat-Regular.ttf") format("truetype");
+  src: url("#{$base-path-fonts}/montserra/static/Montserrat-Regular.ttf") format("truetype"); /* https://fonts.google.com/specimen/Montserrat/ */
   font-weight: 400;
   font-style: normal;
 }
