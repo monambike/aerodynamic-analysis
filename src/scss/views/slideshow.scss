@@ -16,6 +16,11 @@ For license information, please see the LICENSE file in the root directory.
 8 - @media - media queries should be defined last for ease of modification and readability.
 */
 
+
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Montserrat Regular";
+
 /*-- scss:rules --*/
 
 .reveal{
@@ -24,6 +29,13 @@ For license information, please see the LICENSE file in the root directory.
       rgba(25, 25, 25, 0.95),
       rgba(25, 25, 25, 0.95)
     );
+  filter: brightness(0);
+  color: $black;
+  
+  animation: changebrightness 1200ms ease-out forwards;
+  animation-delay: 1.5s;
+
+
   &:not(:has(.present.first-slide)) {
     background:
       linear-gradient(
@@ -35,11 +47,6 @@ For license information, please see the LICENSE file in the root directory.
     background-repeat: repeat;
     background-size: contain;
   }
-  filter: brightness(0);
-  color: $black;
-  
-  animation: changebrightness 1200ms ease-out forwards;
-  animation-delay: 1.5s;
 
 
   /* || DIVISORY LAYOUTS */
@@ -160,8 +167,32 @@ For license information, please see the LICENSE file in the root directory.
   .slide-background video {
     filter: blur(10px) brightness(0.5) !important;
   }
+  
+  
+  /* Removing everything from slide */
+  .full-iframe h2,
+  .full-iframe p,
+  .full-iframe .subtitle,
+  .full-iframe .notes {
+    display: none !important;
+  }
+  /* Forcing iframe occupy everything from slide */
+  .full-iframe {
+    visibility: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
+  /* Hamburguer Menu Button */
+  .slide-menu-button .fa-bars::before {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(72%) saturate(4099%) hue-rotate(246deg) brightness(89%) contrast(97%); /* site: https://angel-rs.github.io/css-color-filter-generator/ */
+  }
+  /* Progress Bar */
+  .progress {
+    color: #673fe0;
+  }
 
+  /* || SPECIFIC SLIDE CSS - DASHBOARD */
   /* || ANIMATIONS */
   section {
     /* Opacity animation in subtitles */
@@ -195,11 +226,12 @@ For license information, please see the LICENSE file in the root directory.
       opacity: 0;
       animation: none;
     }
-    /* Making every item in a list animate one after other within a delay */
-    @for $i from 1 through 20 {
-    section.present li:nth-child(#{$i}) {
-        animation-delay: $i * 0.2s;
-      }
+  }
+  
+  /* Making every item in a list animate one after other within a delay */
+  @for $i from 1 through 20 {
+  section.present li:nth-child(#{$i}) {
+      animation-delay: $i * 0.2s;
     }
   }
 }

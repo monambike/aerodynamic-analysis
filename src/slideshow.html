@@ -6,8 +6,8 @@
 <script src="slideshow_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slideshow_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slideshow_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slideshow_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+<link href="slideshow_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Análise de Aerodinâmica</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="slideshow_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="slideshow_files/libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,7 +31,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slideshow_files/libs/revealjs/dist/theme/quarto-9faecb7706d06449ce0c3cd17bd62788.css">
+  <link rel="stylesheet" href="slideshow_files/libs/revealjs/dist/theme/quarto-1e72aa773300944b10393c2cd7681f6c.css">
   <link href="slideshow_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slideshow_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slideshow_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -125,12 +128,17 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="first-slide center" data-background-opacity="0.5" data-background-position="center" data-background-size="cover" data-background-video="resources/videos/background-sky.mp4" data-background-video-loop="true" data-background-video-muted="true" data-notes="<p>Vamos trazer um pouco do mundo da aerodinâmica e mostrar sua diversidade através de visualizações de dados.</p>">
+<section id="title-slide" class="first-slide center" data-background-opacity="0.5" data-background-position="center" data-background-size="cover" data-background-video="www/resources/videos/background-sky.mp4" data-background-video-loop="true" data-background-video-muted="true" data-notes="<p>Vamos trazer um pouco do mundo da aerodinâmica e mostrar sua diversidade através de visualizações de dados.</p>">
   <h1 class="title">Análise de Aerodinâmica</h1>
-  <p class="subtitle">Entendendo o comportamento <em>aerodinâmico</em> com a <br> <b>visualização de dados</b></p>
+  <p class="subtitle">Entendendo o comportamento <em>aerodinâmico</em> com a <b>visualização de dados</b></p>
 
 <div class="quarto-title-authors">
 </div>
+
+</section>
+<section>
+<section id="introdução" class="title-slide slide level1 center">
+<h1>Introdução</h1>
 
 </section>
 <section id="integrantes" class="slide level2">
@@ -141,7 +149,7 @@
 <li>Pedro Henrique Balduino</li>
 <li>Vinícius Gabriel Marques de Melo</li>
 </ul>
-</section>
+</section></section>
 <section>
 <section id="o-ar-pode-derrubar-um-avião" class="title-slide slide level1 center">
 <h1>O ar pode derrubar um avião</h1>
@@ -149,9 +157,11 @@
 <p>E também economizar milhões em combustível.</p>
 </div>
 </section>
-<section id="introdução" class="slide level2">
-<h2>Introdução</h2>
-<p>Aerodinâmica e Coeficientes Aerodinâmicos</p>
+<section id="por-que-aviões-voam" class="slide level2">
+<h2>Por que Aviões Voam?</h2>
+<ul>
+<li>Aerodinâmica e Coeficientes Aerodinâmicos</li>
+</ul>
 <aside class="notes">
 <p>Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâmicos. A</p>
 <style type="text/css">
@@ -245,7 +255,7 @@
 <section class="slide level2">
 
 
-<img data-src="resources/images/aircraft-comparison.png" class="r-stretch quarto-figure-center"><p class="caption">(KPMG) Comparação da aerodinâmica de um caça militar com um avião comercial.</p></section></section>
+<img data-src="www/resources/images/aircraft-comparison.png" class="r-stretch quarto-figure-center"><p class="caption">(KPMG) Comparação da aerodinâmica de um caça militar com um avião comercial.</p></section></section>
 <section id="a-aerodinâmica-é-essencial" class="title-slide slide level1 center">
 <h1>A Aerodinâmica é Essencial</h1>
 <div class="subtitle">
@@ -286,11 +296,21 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="insira-o-dashboard" class="slide level2">
-<h2>[Insira o Dashboard]</h2>
-</section>
-<section class="slide level2">
-
+<section id="dashboard-1" class="slide level2 full-iframe" data-background-iframe="http://localhost:3838/" data-background-size="cover">
+<h2>Dashboard</h2>
+<aside class="notes">
+<p>Se clicar no Dashboard, o foco sai do slide e as setas param de funcionar. Clique nessa janela de apresentação para voltar a navegar.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section id="descoberta" class="title-slide slide level1 center">
 <h1>Descoberta</h1>
@@ -299,7 +319,6 @@
 </div>
 </section>
 
-<section>
 <section id="perguntas" class="title-slide slide level1 center">
 <h1>Perguntas?</h1>
 <aside class="notes">
@@ -315,16 +334,12 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="referências-bibliográficas" class="slide level2">
-<h2>Referências Bibliográficas</h2>
-<p>20260531 https://kpmg.com/de/de/themen/geopolitics/luft-und-raumfahrt-verteidigungsbranche.html?utm_source=chatgpt.com</p>
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><img src="resources/images/logo-ufv.png" class="footer-logo-ufv" height="50px"></p>
+<p><img src="www/resources/images/logo-ufv.png" class="footer-logo-ufv" height="50px"></p>
 </div>
 </div></div>
 

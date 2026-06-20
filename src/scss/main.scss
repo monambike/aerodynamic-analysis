@@ -6,13 +6,13 @@ For license information, please see the LICENSE file in the root directory.
 
 /*-- scss:rules --*/
 
+// abstract
+@import "abstract/_variables.scss";
+
 // base
 @import "base/_colors.scss";
 @import "base/_fonts.scss";
 @import "base/_typography.scss";
-
-// abstract
-@import "abstract/_variables.scss";
 
 // animation
 @import "animation/_animation.scss";

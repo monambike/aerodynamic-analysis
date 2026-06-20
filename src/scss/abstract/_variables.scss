@@ -6,12 +6,15 @@ For license information, please see the LICENSE file in the root directory.
 
 /*-- scss:rules --*/
 
-$primary-color: $white;
-$secondary-color: $black;
-
+// Animation
 $animation-normal: 800ms;
 $delay-normal: 1s;
 
-$base-path-resources: "www/resources";
+// Font Family
+$font-family-default: "Montserrat Regular", sans-serif;
+
+// Paths
+$base-path-resources: "/www/resources";
 $base-path-images: "#{$base-path-resources}/images";
 $base-path-videos: "#{$base-path-resources}/videos";
+$base-path-fonts: "#{$base-path-resources}/fonts";

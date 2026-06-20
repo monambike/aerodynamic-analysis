@@ -1,6 +1,6 @@
 ---
 title: "Análise de Aerodinâmica"
-subtitle: "Entendendo o comportamento <em>aerodinâmico</em> com a <br> <b>visualização de dados</b>"
+subtitle: "Entendendo o comportamento <em>aerodinâmico</em> com a <b>visualização de dados</b>"
 type: default
 format:
   revealjs:
@@ -11,7 +11,7 @@ format:
     transition: slide
     title-slide-attributes:
       class: first-slide
-      data-background-video: resources/videos/background-sky.mp4
+      data-background-video: www/resources/videos/background-sky.mp4
       data-background-size: cover
       data-background-opacity: "0.5"
       data-background-position: center
@@ -20,9 +20,11 @@ format:
       data-notes: |
         Vamos trazer um pouco do mundo da aerodinâmica e mostrar sua diversidade através de visualizações de dados.
     footer: |
-      <img src='resources/images/logo-ufv.png' class='footer-logo-ufv' height='50px'>
+      <img src='www/resources/images/logo-ufv.png' class='footer-logo-ufv' height='50px'>
 editor: visual
 ---
+
+# Introdução
 
 ## Integrantes
 
@@ -39,9 +41,9 @@ E também economizar milhões em combustível.
 
 ------------------------------------------------------------------------
 
-## Introdução
+## Por que Aviões Voam?
 
-Aerodinâmica e Coeficientes Aerodinâmicos
+-   Aerodinâmica e Coeficientes Aerodinâmicos
 
 ::: notes
 Para começar, dar uma palinha sobre a aerodinâmica e os coeficientes aerodinâmicos. A
@@ -99,7 +101,7 @@ Existe infinidade de coisas no nosso dia a dia que dependem do estudo da aerodi�
 
 ------------------------------------------------------------------------
 
-![(KPMG) Comparação da aerodinâmica de um caça militar com um avião comercial.](resources/images/aircraft-comparison.png)
+![(KPMG) Comparação da aerodinâmica de um caça militar com um avião comercial.](www/resources/images/aircraft-comparison.png)
 
 # A Aerodinâmica é Essencial
 
@@ -121,11 +123,11 @@ Entendendo comportamentos da aerodinâmica por meio de visualizações.
 Agora partiremos para as demonstrações gráficas e o Dashboard.
 :::
 
-------------------------------------------------------------------------
+## Dashboard {.full-iframe background-iframe="http://localhost:3838/" background-size="cover"}
 
-## \[Insira o Dashboard\]
-
-------------------------------------------------------------------------
+::: notes
+Se clicar no Dashboard, o foco sai do slide e as setas param de funcionar. Clique nessa janela de apresentação para voltar a navegar.
+:::
 
 # Descoberta
 
@@ -138,9 +140,3 @@ Então com isso concluimos que \[...\]
 ::: notes
 Com isso, terminamos a nossa apresentação, esperamos que tenham gostado. Alguém teria alguma pergunta?
 :::
-
-------------------------------------------------------------------------
-
-## Referências Bibliográficas
-
-20260531 https://kpmg.com/de/de/themen/geopolitics/luft-und-raumfahrt-verteidigungsbranche.html?utm_source=chatgpt.com
