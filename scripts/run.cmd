@@ -1,8 +1,8 @@
-:: /***************************************************************************
-:: Copyright(c) 2026 The Authors. Built at UFV (Universidade Federal de Viçosa).
-:: Project authors: Vinícius Gabriel, Luiz Lopes, Davi Atayde, Pedro Balduino.
+:: /**************************************************************************
+:: Copyright(c) 2026 Vinicius Gabriel Marques de Melo. All rights reserved.
+:: Contact: contact@monambike.com for more information.
 :: For license information, please see the LICENSE file in the root directory.
-:: ***************************************************************************/
+:: **************************************************************************/
 
 
 @echo off
