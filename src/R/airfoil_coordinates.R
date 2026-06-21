@@ -1,6 +1,6 @@
-# **************************************************************************
-# Copyright(c) 2026 UFV - Universidade Federal de Viçosa. All rights reserved.
-# Project from: Vinícius Gabriel, Luiz Lopes, Davi Atayde, Pedro Balduino.
+# /**************************************************************************
+# Copyright(c) 2026 The Authors. Built at UFV (Universidade Federal de Viçosa).
+# Project authors: Vinícius Gabriel, Luiz Lopes, Davi Atayde, Pedro Balduino.
 # For license information, please see the LICENSE file in the root directory.
 # **************************************************************************/
 
