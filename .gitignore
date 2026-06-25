@@ -50,5 +50,3 @@ rsconnect/
 
 # Output Files
 *_files/
-src/dashboard.html
-src/slideshow.html
