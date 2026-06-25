@@ -3,9 +3,15 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
 
 # Screenshots
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/c7bc9290-244d-4a32-85cb-fe56a0ae603f" />
+## Main Tabs
 
-<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/4103eb10-f9ee-44c0-aee3-7e6aad4ffd66" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f1c46eb9-186e-49c2-874f-e39eb54b0b33" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2be28b3d-2a46-43f2-a977-674da61e5624" />
+
+## Airfoil Wing
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/18feaafd-3f6b-4cf3-aa59-f10154262c0b" />
 
 # Project Members
 
