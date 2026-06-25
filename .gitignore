@@ -47,3 +47,8 @@ rsconnect/
 
 # Quarto files
 .quarto/
+
+# Output Files
+*_files/
+src/dashboard.html
+src/slideshow.html
