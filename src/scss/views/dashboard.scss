@@ -36,3 +36,17 @@ img.navbar-logo.d-inline-block {
   border-radius: 2px;
   box-shadow: inset 2px 2px 4px 1px;
 }
+
+// Select Input
+select {
+  option:checked {
+    background: rgba(103, 63, 224);
+    color: rgba(245, 245, 245);
+  }
+}
+
+// Selection
+::selection {
+  background: rgba(140, 102, 255);
+  color: rgba(245, 245, 245);
+}

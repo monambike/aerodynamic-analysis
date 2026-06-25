@@ -31,6 +31,7 @@ $font-family-sans-serif: "Montserrat Regular";
     );
   filter: brightness(0);
   color: $black;
+  user-select: none;
   
   animation: changebrightness 1200ms ease-out forwards;
   animation-delay: 1.5s;
