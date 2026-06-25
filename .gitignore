@@ -47,6 +47,7 @@ rsconnect/
 
 # Quarto files
 .quarto/
+*.quarto_ipynb
 
 # Output Files
 *_files/
