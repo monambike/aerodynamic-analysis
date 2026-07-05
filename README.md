@@ -3,15 +3,23 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
 
 # Screenshots
 
-## Main Tabs
+## Aircraft and Airfoils
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f1c46eb9-186e-49c2-874f-e39eb54b0b33" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0444912a-0416-4038-8e8c-57736433cf11" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ced05c3-cd0b-4b97-b515-5f1cfa8942e9" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5ed7d51-a2d4-4e5b-8b49-3a0db1b7024f" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3b98660f-b675-42b3-b5e0-1f859e235cb5" />
+
+## Metrics
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2be28b3d-2a46-43f2-a977-674da61e5624" />
 
-## Airfoil Wing
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a0e00c27-e97a-4f84-9b88-d19c49294d3f" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/18feaafd-3f6b-4cf3-aa59-f10154262c0b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf455aa3-8c42-4d75-b87d-780c357af602" />
 
 # Project Members
 
