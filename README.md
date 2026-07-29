@@ -22,6 +22,10 @@ A aerodynamic analysis dashboard and presentation with comparisons about differe
   <img src="https://github.com/user-attachments/assets/cf455aa3-8c42-4d75-b87d-780c357af602" width="250">
 </p>
 
+## Hosting Script
+
+<img width="510" height="236" alt="image" src="https://github.com/user-attachments/assets/4616fad4-5b8f-4c31-8c8f-4f0ab69796f0" />
+
 # Project Members
 
 - **Vinícius Gabriel** - Slides and Dashboard
