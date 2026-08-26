@@ -1,3 +1,8 @@
+<img alt="Static Badge" src="https://img.shields.io/badge/MONAMBIKE-%236c00fa?style=for-the-badge&label=MADE%20BY&labelColor=%23050505"> <img alt="Static Badge" src="https://img.shields.io/badge/MIT%20license-%236c00fa?style=for-the-badge&label=LICENSE&labelColor=%23050505"> <img alt="Static Badge" src="https://img.shields.io/badge/POSIT%20CLOUD-%233F709B?style=for-the-badge&label=HOSTED%20IN&labelColor=%23050505">
+
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+
 # Aerodynamic Analysis
 A aerodynamic analysis dashboard and presentation with comparisons about different aircraft airfoils. Made for Data Analytics Course in UFV.
 
